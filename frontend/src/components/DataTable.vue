@@ -9,7 +9,8 @@ type DataEntryKey = keyof DataEntryType;
 var dataEntries = ref(objects);
 
 var nameKeys = Object.keys(nameLookup);
-var visibleKeys = ref(["name", "taxonomicClass", "totalDuration", "locality"]);
+// var visibleKeys = ref(["name", "taxonomicClass", "totalDuration", "locality"]);
+var visibleKeys = ref(["name", "url", "version"]);
 var hiddenKeys = ["url"];
 
 var currentData = ref<DataEntryType>(objects[0]);

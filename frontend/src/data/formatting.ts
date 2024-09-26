@@ -3,37 +3,43 @@ import { type DataEntryType } from "./index";
 type DataEntryKey = keyof DataEntryType;
 
 // TODO: actually finish this.
+// var nameLookup: { [key: string]: string } = {
+//     "additionalDescription": "Additional description",
+//     "annotationsType": "annotationsType",
+//     "captureDevice": "captureDevice",
+//     "continent": "continent",
+//     "countryCode": "countryCode",
+//     "creators": "creators",
+//     "datePublished": "datePublished",
+//     "description": "description",
+//     "labellingLevel": "labellingLevel",
+//     "license": "license",
+//     "lifeStage": "lifeStage",
+//     "locality": "locality",
+//     "minAndMaxRecordingDuration": "minAndMaxRecordingDuration",
+//     "name": "name",
+//     "numAnnotations": "numAnnotations",
+//     "numAudioFiles": "numAudioFiles",
+//     "numClasses": "numClasses",
+//     "numSpecies": "numSpecies",
+//     "paperLink": "paperLink",
+//     "physicalSetting": "physicalSetting",
+//     "provider": "provider",
+//     "recordingPeriod": "recordingPeriod",
+//     "recordingType": "recordingType",
+//     "sampleRate": "sampleRate",
+//     "sizeInGb": "sizeInGb",
+//     "taxonomicClass": "taxonomicClass",
+//     "totalDuration": "totalDuration",
+//     "url": "url",
+//     "version": "version"
+// };
+
 var nameLookup: { [key: string]: string } = {
-    "additionalDescription": "Additional description",
-    "annotationsType": "annotationsType",
-    "captureDevice": "captureDevice",
-    "continent": "continent",
-    "countryCode": "countryCode",
-    "creators": "creators",
-    "datePublished": "datePublished",
-    "description": "description",
-    "labellingLevel": "labellingLevel",
-    "license": "license",
-    "lifeStage": "lifeStage",
-    "locality": "locality",
-    "minAndMaxRecordingDuration": "minAndMaxRecordingDuration",
-    "name": "name",
-    "numAnnotations": "numAnnotations",
-    "numAudioFiles": "numAudioFiles",
-    "numClasses": "numClasses",
-    "numSpecies": "numSpecies",
-    "paperLink": "paperLink",
-    "physicalSetting": "physicalSetting",
-    "provider": "provider",
-    "recordingPeriod": "recordingPeriod",
-    "recordingType": "recordingType",
-    "sampleRate": "sampleRate",
-    "sizeInGb": "sizeInGb",
-    "taxonomicClass": "taxonomicClass",
-    "totalDuration": "totalDuration",
     "url": "url",
     "version": "version"
 };
+
 
 function formatDate(entry: DataEntryType, key: string) {
     var value = entry[key as DataEntryKey];
