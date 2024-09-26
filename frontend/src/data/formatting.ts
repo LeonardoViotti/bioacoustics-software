@@ -47,15 +47,15 @@ function createLink(href: string | undefined, text: string | undefined) {
 // In some cases, we might need to process the data before showing it. (i.e. parse dates)
 // In these cases, define the function here, by keying it with the prop name.
 var functionLookup: { [key: string]: Function } = {
-    "creators": (entry: DataEntryType, key: string) => {
-        var data = entry[key as DataEntryKey] as string[];
-        return data ? (data as string[]).join("; ") : "";
-    },
+    // "creators": (entry: DataEntryType, key: string) => {
+    //     var data = entry[key as DataEntryKey] as string[];
+    //     return data ? (data as string[]).join("; ") : "";
+    // },
     "datePublished": formatDate,
     "title": (entry: DataEntryType, key: string) => {
         return createLink(entry["url" as DataEntryKey]?.toString(), entry["title" as DataEntryKey]?.toString())
     },
-    "paperLink": (entry: DataEntryType, key: string) => { return entry["paperLink"] == null ? "" : createLink(entry["paperLink" as DataEntryKey]?.toString(), "paper link"); }
+    // "paperLink": (entry: DataEntryType, key: string) => { return entry["paperLink"] == null ? "" : createLink(entry["paperLink" as DataEntryKey]?.toString(), "paper link"); }
 };
 
 
