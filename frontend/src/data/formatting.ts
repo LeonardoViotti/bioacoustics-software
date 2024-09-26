@@ -28,7 +28,6 @@ var nameLookup: { [key: string]: string } = {
     "comments": "Comments"
 };
 
-
 function formatDate(entry: DataEntryType, key: string) {
     var value = entry[key as DataEntryKey];
     if (!value) {
