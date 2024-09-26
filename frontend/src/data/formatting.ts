@@ -52,8 +52,8 @@ var functionLookup: { [key: string]: Function } = {
         return data ? (data as string[]).join("; ") : "";
     },
     "datePublished": formatDate,
-    "name": (entry: DataEntryType, key: string) => {
-        return createLink(entry["url" as DataEntryKey]?.toString(), entry["name" as DataEntryKey]?.toString())
+    "title": (entry: DataEntryType, key: string) => {
+        return createLink(entry["url" as DataEntryKey]?.toString(), entry["title" as DataEntryKey]?.toString())
     },
     "paperLink": (entry: DataEntryType, key: string) => { return entry["paperLink"] == null ? "" : createLink(entry["paperLink" as DataEntryKey]?.toString(), "paper link"); }
 };
