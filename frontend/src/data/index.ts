@@ -1,38 +1,28 @@
+
+
 interface DataEntry {
-    additionalDescription: string;
-    annotationsType: string;
-    captureDevice: string;
-    citeAs: string | undefined;
-    continent: string;
-    countryCode: string;
-    creators: string[];
-    datePublished: Date;
-    description: string;
-    labellingLevel: string;
-    license: string;
-    lifeStage: string;
-    locality: string;
-    minAndMaxRecordingDuration: string;
-    name: string;
-    numAnnotations: number;
-    numAudioFiles: number;
-    numClasses: number;
-    numSpecies: number;
-    paperLink: string;
-    physicalSetting: string;
-    provider: string;
-    recordingPeriod: string;
-    recordingType: string;
-    sampleRate: number;
-    sizeInGb: number;
-    species: string;
-    taxonomicClass: string;
-    totalDuration: number;
+    title: string;
     url: string;
-    version: number;
+    description: string;
+    paidOrFree: string;
+    codeAvailable: string;
+    licenseWipCategory: string;
+    taxonomicOrSoundTypeSpecializationIfAny: string | null;
+    ecosystemSpecializationIfAny: string | null;
+    specificHardware: string | null;
+    type: string;
+    dataExploration: string | null;
+    organization: string | null;
+    annotation: string | null;
+    soundProcessingFeatures: string | null;
+    acousticParameterMeasurement: string | null;
+    localization: string | null;
+    detectorFeatures: string | null;
+    classifierFeatures: string | null;
+    metadataStandardWipCategory: string | null;
+    toBeRemovedWipCategory: string | null;  // Added based on the JSON structure
+    comments: string | null;
 }
-
-
 
 export type { DataEntry as DataEntryType };
 

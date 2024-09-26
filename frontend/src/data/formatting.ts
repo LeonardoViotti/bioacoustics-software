@@ -2,42 +2,30 @@ import moment from "moment";
 import { type DataEntryType } from "./index";
 type DataEntryKey = keyof DataEntryType;
 
-// TODO: actually finish this.
-// var nameLookup: { [key: string]: string } = {
-//     "additionalDescription": "Additional description",
-//     "annotationsType": "annotationsType",
-//     "captureDevice": "captureDevice",
-//     "continent": "continent",
-//     "countryCode": "countryCode",
-//     "creators": "creators",
-//     "datePublished": "datePublished",
-//     "description": "description",
-//     "labellingLevel": "labellingLevel",
-//     "license": "license",
-//     "lifeStage": "lifeStage",
-//     "locality": "locality",
-//     "minAndMaxRecordingDuration": "minAndMaxRecordingDuration",
-//     "name": "name",
-//     "numAnnotations": "numAnnotations",
-//     "numAudioFiles": "numAudioFiles",
-//     "numClasses": "numClasses",
-//     "numSpecies": "numSpecies",
-//     "paperLink": "paperLink",
-//     "physicalSetting": "physicalSetting",
-//     "provider": "provider",
-//     "recordingPeriod": "recordingPeriod",
-//     "recordingType": "recordingType",
-//     "sampleRate": "sampleRate",
-//     "sizeInGb": "sizeInGb",
-//     "taxonomicClass": "taxonomicClass",
-//     "totalDuration": "totalDuration",
-//     "url": "url",
-//     "version": "version"
-// };
+
 
 var nameLookup: { [key: string]: string } = {
-    "url": "url",
-    "version": "version"
+    "title": "Title",
+    "url": "Url",
+    "description": "Description",
+    "paidOrFree": "Paid or free",
+    "codeAvailable": "Code available",
+    "licenseWipCategory": "Licence [WIP category]",
+    "taxonomicOrSoundTypeSpecializationIfAny": "Taxonomic or sound type specialization, if any",
+    "ecosystemSpecializationIfAny": "Ecosystem specialization, if any",
+    "specificHardware": "Specific Hardware",
+    "type": "Type",
+    "dataExploration": "Data exploration",
+    "organization": "Organization",
+    "annotation": "Annotation",
+    "soundProcessingFeatures": "Sound processing features",
+    "acousticParameterMeasurement": "Acoustic parameter measurement",
+    "localization": "Localization",
+    "detectorFeatures": "Detector features",
+    "classifierFeatures": "Classifier features",
+    "metadataStandardWipCategory": "Metadata standard [WIP category]",
+    "toBeRemovedWipCategory": "To be removed [WIP category]",
+    "comments": "Comments"
 };
 
 

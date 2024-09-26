@@ -10,7 +10,7 @@ var dataEntries = ref(objects);
 
 var nameKeys = Object.keys(nameLookup);
 // var visibleKeys = ref(["name", "taxonomicClass", "totalDuration", "locality"]);
-var visibleKeys = ref(["name", "url", "version"]);
+var visibleKeys = ref(["title", "url", "type"]);
 var hiddenKeys = ["url"];
 
 var currentData = ref<DataEntryType>(objects[0]);
