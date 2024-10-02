@@ -4,7 +4,7 @@ import DataTable from "../components/DataTable.vue";
 <!--  TODO: use the createLink function -->
 <template>
     <div class="flow-root">  
-        <!-- <img class="h-auto max-w-xs float-left" src=".././assets/BiocAI_image.png" width=100 alt="Logo of the BiocAI project"> -->
+        <img class="h-auto max-w-xs float-left" src=".././assets/kitzes-logo.png" width=200 alt="Logo of the BiocAI project">
         <!-- <img class="h-auto  max-w-xs rounded-lg float-right" src=".././assets/EU.png" width=90 alt="EU flag"> -->
     </div>
     <div class="text-center mb-4">
