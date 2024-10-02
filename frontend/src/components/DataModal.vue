@@ -31,7 +31,7 @@ var nameKeys = Object.keys(nameLookup);
     <fwb-modal v-if="isShowModal" @close="closeModal" size="5xl">
         <template #header>
             <div class="flex items-center text-lg">
-                {{ props.data?.name }}
+                {{ props.data?.title }}
             </div>
         </template>
         <template #body>
