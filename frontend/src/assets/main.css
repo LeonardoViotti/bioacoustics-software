@@ -6,3 +6,13 @@
   padding: 2rem;
   font-weight: normal;
 }
+
+a.text-href {
+  color: #1E429F !important;
+  text-decoration: none;
+}
+
+a.text-href:hover {
+  color: green;
+  text-decoration: underline;
+}
